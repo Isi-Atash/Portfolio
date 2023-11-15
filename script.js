@@ -90,4 +90,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-/* Additional JavaScript for animations */
+
+document.addEventListener('mousemove', (e) => {
+  const x = e.pageX;
+  const y = e.pageY;
+  document.querySelector('.content').style.backgroundImage = `radial-gradient(circle at ${x}px ${y}px, rgba(255, 255, 255, 1) 200px, black 250px)`;
+});
+
