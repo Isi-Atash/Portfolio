@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+section {
+  margin: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+}
+
+article {
+  margin-bottom: 15px;
+}
+
+#contact {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: #fff;
+  }
+}
+
+/* Same as before, but you can add hover effects, transitions, etc., for interactivity */
+
+article:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Existing styles... */
+
+/* Hover effect for project articles
+article {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+} */
+
+article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Keyframes for fadeIn effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply the fadeIn effect to sections */
+section {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.tech-tag {
+  display: inline-block;
+  background-color: #e0e0e0;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin: 5px;
+  font-size: 0.8em;
+  color: #333;
+}
